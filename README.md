@@ -53,3 +53,19 @@ To build an inverted index, fetch all the documents, ignore any punctuation mark
      ![image](https://github.com/kaans4nli/INVERTED-INDEX-BY-USING-HASH-TABLES/assets/107371841/66113015-92bf-404e-8da6-8630415ab69a)
 
 3. **Collision Handling**
+
+   * Linear Probing (LP)
+
+     Linear probing handles collisions by placing the colliding item in the next (circularly) available table cell.
+     
+   * Double Hashing (DH)
+
+     Double hashing uses a secondary hash function *d(k)* and handles collisions by placing an item in the first available cell of the series.
+
+     ![image](https://github.com/kaans4nli/INVERTED-INDEX-BY-USING-HASH-TABLES/assets/107371841/7632f317-74d7-4f75-954e-e237f32a363c)
+
+     The secondary hash function *d(k)* cannot have zero values. The table size N must be a prime to allow probing of all the cells.
+
+     Example:
+
+     ![image](https://github.com/kaans4nli/INVERTED-INDEX-BY-USING-HASH-TABLES/assets/107371841/c26b87e5-68b7-41b3-8327-d89298837c2b)
